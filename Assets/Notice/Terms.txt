@@ -1,0 +1,90 @@
+TERMS OF USE AND RULES
+
+These Terms of Use outline the rules for interacting with Microtwi's products, including the game, website, and related media. By using these products, you agree to these terms. If you have legal concerns, consult a legal professional.
+
+0. DEFINITIONS
+
+- “I / My ”: Refers to the owner, creator, and rights holder of the game, website, and related content.
+- “Microtwi” is the brand name used to identify the individual creator of the game, website, and related content. All rights, responsibilities, and obligations described in these Terms of Use apply to the individual creator operating under the name “Microtwi” until such time as it is formally registered as a legal entity.
+- “You / User / Player / Fans”: Refers to the individuals interacting with Microtwi’s products, such as the game, website, or community.
+Microtwi encourages creativity and fan involvement. However, certain boundaries must be respected to protect original and licensed content.
+
+1. COPYRIGHT AND CONTENT USE
+
+1.1 Ownership of Content
+The game and website contain:
+- Original content owned by Microtwi, including:
+- Storylines, characters, unique character patterns/textures, custom animations (cutscenes), all textures, house and item 3D models, UI design, original music, and most code.
+- Licensed content that Microtwi has permission to use but cannot grant others permission to reuse. This includes:
+- Certain environment models (e.g., cliffs, trees), the 3D horse model, some character animations, the font, and all sound effects.
+Unauthorized use, reproduction, or distribution of any content (original or licensed) is prohibited unless explicitly permitted in these terms.
+
+1.2 Fan Content and Use Guidelines
+Fans are encouraged to create and share fan works such as art, stories, videos, or small fangames, provided the following rules are followed:
+
+1.2.1 Non-Commercial Use:
+- Fan works must not be sold or monetized directly unless specified below.
+- Example: Creating / Sharing a fan game for free is fine, but selling it is prohibited.
+
+1.2.2 Permitted Monetization:
+- You may enable monetization on platforms like YouTube for gameplay videos, commentary, or similar content.
+- You may sell limited items inspired by the game (e.g., a plushie or artwork) through donations or commission-based systems, but:
+- You cannot mass-produce or explicitly advertise items for sale.
+- The focus must not solely be on selling items based on Microtwi's content. For example, commissions for personalized fan art are allowed.
+
+1.2. 3 Attribution:
+- Always credit Microtwi and link to the official website (microtwi.com) when sharing fan works.
+
+1.2.3 Prohibited Use:
+- Using game content (characters, assets, etc.) for any commercial product, promotion, or unrelated content without explicit permission is strictly prohibited.
+
+1.3 Asset Licensing
+Some assets in the game are licensed to Microtwi and cannot be reused in any form without the original licensor's permission. For example:
+- The 3D horse model.
+- Environment models like cliffs and trees.
+
+If fan works include these assets, it is your responsibility to obtain the appropriate permissions.
+
+2. ASSET USE AND MODDING POLICY
+
+2.1 Exporting or Redistributing Assets:
+- Exporting or redistributing game assets (e.g., models, textures, animations) is strictly prohibited. This applies to both Microtwi’s original content and licensed assets.
+
+2.2 Modding:
+- Modding is not officially supported by Microtwi, and any modifications to the game are done at the user’s own risk.
+- Licensed assets (e.g., 3D models, animations) remain subject to their original licensing terms. If you modify, export, or misuse these assets, you assume full responsibility for any resulting legal or financial consequences. Microtwi is not liable for such actions.
+- Mods that violate third-party licensing agreements, redistribute prohibited content, or misrepresent themselves as official or endorsed by Microtwi may result in enforcement actions, including takedown requests or legal action.
+
+2.3 Disclaimer of Liability:
+- Microtwi is not responsible for any issues caused by mods, including but not limited to crashes, data corruption, or performance problems. Users assume full responsibility for modding-related risks.
+
+3. DATA COLLECTION AND PRIVACY
+
+3.1 Game Data Collection
+- The game does not collect personal data, telemetry, or analytics at this time.
+- If this changes, users will be notified and given the option to review updated terms.
+
+3.2 Website Data Collection
+- Feedback forms on the website may require a Google Account to ensure one unique response per user. This information is not shared with Microtwi.
+- Bug reports may involve submitting additional media (e.g., videos or screenshots). These are only used for troubleshooting.
+
+3.3 Third-Party Services
+- The game and website use third-party services, including Unity (game engine), Google Drive, Google Forms, and Itch.io. These services may collect data as part of their operations.
+- Review their respective privacy policies for more details.
+
+3.4 Cookies
+- The website uses cookies from third-party providers (e.g., Google and Porkbun). These can be disabled in your browser settings, though some features may not function as intended.
+
+3.5 Privacy and Security
+- All collected data is used solely to improve your experience with Microtwi’s products. Data is not sold or shared with third parties except as required by the services mentioned above.
+
+4. UPDATES TO TERMS
+
+These Terms of Use may be updated periodically to reflect new features, policies, or legal requirements. Continued use of Microtwi products constitutes acceptance of any updated terms. Users are encouraged to review the terms regularly.
+
+5. ENFORCEMENT
+
+Violations of these terms may result in actions such as:
+- Removal of infringing content (e.g., DMCA takedowns).
+- Loss of access to Microtwi products.
+- Legal action, if necessary, to protect intellectual property rights.
