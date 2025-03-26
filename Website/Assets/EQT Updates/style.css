@@ -1,0 +1,478 @@
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:active {
+    color: grey;
+}
+
+a:hover {
+    color: grey;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+    text-align: left;
+    text-shadow: 0 0 1px rgb(55, 55, 55);
+    background: #190c3d;
+    background-color: rgb(25, 12, 61);
+    color: white;
+    animation: transitionIn .5s ease-out;
+}
+
+.bg {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 95px;
+    padding: 5px;
+    border: 0px solid rgb(0, 0, 0);
+    border-radius: 11px;
+}
+
+.rounded-corners {
+    font-size: 17px;
+    border: 0px;
+    border-radius: 11px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+
+    /* padding: 7px; */
+    /* border: 3px solid white; */
+    /* border-color: rgba(222, 222, 222, .5); */
+}
+
+.search-bar {
+    scale: 1;
+    width: 75%;
+    border: 0px solid rgb(255, 255, 255);
+    border-radius: 25px;
+    height: 24px;
+    background-color: rgba(200, 200, 200, .1);
+    color: rgb(255, 255, 255);
+    align-self: center;
+    padding: 1%;
+    animation: menuIn .75s ease-out;
+    transition: .5s;
+}
+
+.search-bar:hover,
+.search-bar:focus {
+    scale: 1.1;
+}
+
+.button {
+    scale: 1;
+    border: none;
+    border-radius: 11px;
+    font-size: 17px;
+    padding: .5%;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: .1s;
+}
+
+.button:hover {
+    scale: 1.1;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.contentBg {
+    padding: 11px;
+    border-radius: 11px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(222, 222, 222, .5);
+}
+
+.tableBg {
+    width: 100%;
+    border-radius: 11px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(222, 222, 222, .5);
+}
+
+.scrollingDiv {
+    overflow: hidden;
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+
+.scrollingDiv:hover {
+    overflow: auto;
+    overflow-x: auto;
+}
+
+.title {
+    font-size: 32px;
+    color: rgb(210, 181, 117);
+}
+
+.sub-title {
+    font-size: 20px;
+    color: rgb(210, 181, 117);
+}
+
+.description {
+    color: rgb(222, 222, 222);
+    transition: .5s all;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.offset {
+    text-align: left;
+    margin-top: 0px;
+    padding-top: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 80%;
+    color: white;
+    transition: all .5s;
+}
+
+.audioPlayer {
+    width: 100%;
+    background-color: rgb(241, 243, 244);
+    border: 3px solid rgb(174, 174, 174);
+    border-radius: 11px;
+}
+
+.modal::backdrop {
+    background-color: black;
+    opacity: .8;
+    backdrop-filter: blur(75px);
+    animation: fadeIn .2s;
+}
+
+.modal {
+    padding: 15px;
+    font-family: Arial;
+    text-align: center;
+    text-shadow: 0 0 1px rgb(55, 55, 55);
+    /* background-color: rgb(25, 12, 61, .5); */
+    background-color: rgb(70, 0, 125);
+    backdrop-filter: blur(999px);
+    color: white;
+    border: 0px solid white;
+    border-radius: 11px;
+    animation: modalIn .2s ease-out;
+}
+
+@keyframes modalIn {
+    from {
+        opacity: 0;
+        scale: 0;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: .8;
+    }
+}
+
+#context-menu {
+    list-style-type: none;
+    position: fixed;
+    width: auto;
+    background: rgb(70, 0, 125, .5);
+    backdrop-filter: blur(25px);
+    border-radius: 11px;
+    z-index: 999;
+    padding: 5px;
+
+    transform: scale(0);
+    transform-origin: top left;
+    transition: transform .1s;
+}
+
+#context-menu.active {
+    transform: scale(1);
+    transition: transform .2s;
+}
+
+#context-menu.activated {
+    transform: scale(1);
+    transition: all .1s;
+}
+
+nav ul {
+    border: 0px solid white;
+    border-radius: 11px;
+    margin-top: .5%;
+    margin-left: .5%;
+    padding: .5%;
+    height: 50px;
+    width: 98%;
+    position: fixed;
+    text-align: center;
+    /* box-shadow: 0 0 5px rgb(54, 33, 119); */
+    /* box-shadow: 0 0 5px rgb(42, 8, 84); */
+    /* background: hsla(255, 59%, 31%, 0.7); */
+    background: rgb(70, 0, 125, .8);
+    color: white;
+    animation: menuIn .5s ease-out;
+    backdrop-filter: blur(25px);
+    overflow-y: auto;
+    overflow-x: auto;
+    white-space: nowrap;
+    z-index: 50;
+    transition: all .5s;
+}
+
+#check {
+    display: none;
+}
+
+.checkbtn {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+}
+
+#check:checked~ul {
+    height: 96%;
+    margin: .5%;
+    white-space: pre-line;
+}
+
+.menuLinkLongAlt {
+    text-align: left;
+
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgba(222, 222, 222, .5);
+    color: rgb(255, 255, 255);
+
+    height: 35px;
+    width: 100%;
+    border-radius: 9px;
+    font-size: 17px;
+    padding: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.menuLinkLongAlt:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.menuLink {
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgba(222, 222, 222, .5);
+    color: rgb(255, 255, 255);
+
+    border-radius: 8px;
+    font-size: 17px;
+    padding: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.menuLink:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.menuLinkDec {
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(255, 255, 255);
+
+    border-radius: 8px;
+    font-size: 17px;
+    padding: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.menuLinkLong {
+    text-decoration: none;
+    border: none;
+    background-color: rgba(255, 255, 255, .1);
+    border-color: rgba(222, 222, 222, .5);
+    color: rgb(255, 255, 255);
+
+    height: 35px;
+    width: 100%;
+    border-radius: 9px;
+    font-size: 17px;
+    padding: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.menuLinkLong:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.menuLinkDec:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width:850px) {
+    nav ul {
+        padding-left: 1%;
+        padding-right: 1%;
+        width: 97%;
+        height: 75px;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        white-space: auto;
+        white-space: pre-line;
+    }
+
+    nav ul::selection {
+        height: 60%;
+        margin: .5%;
+        overflow-y: auto;
+        white-space: pre-line;
+    }
+
+    nav ul:hover {
+        height: 60%;
+        margin: .5%;
+        overflow-y: auto;
+        white-space: pre-line;
+    }
+
+    .offset {
+        padding-left: 1%;
+        padding-right: 1%;
+        width: auto;
+    }
+
+    .rounded-corners {
+        border-radius: 9px;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    #context-menu {
+        padding: 7px;
+    }
+
+    .menuLinkLongAlt {
+        padding: 7px;
+        height: 45px;
+    }
+
+    .menuLink {
+        padding: 7px;
+    }
+
+    .menuLinkDec {
+        padding: 7px;
+    }
+
+    .menuLinkLong {
+        padding: 7px;
+        height: 45px;
+    }
+}
+
+.logoAnim {
+    animation: logoIn 1s ease-out;
+}
+
+.logoTextAnim {
+    animation: logoTextIn 1s ease-out;
+}
+
+.footer {
+    border: 0px solid white;
+    border-radius: 11px;
+    margin-bottom: 7px;
+    margin-left: .5%;
+    margin-right: .5%;
+    width: auto;
+    text-align: center;
+    padding: 9px;
+    /* box-shadow: 0 0 5px rgb(54, 33, 119); */
+    /* box-shadow: 0 0 5px rgb(42, 8, 84); */
+    /* background: rgba(56, 32, 126, 0.7); */
+    background: rgb(70, 0, 125);
+    backdrop-filter: blur(25px);
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes menuIn {
+    from {
+        opacity: 0;
+        transform: translateY(-25%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes menuFrontPage {
+    0% {
+        opacity: 0;
+        transform: translateY(0%);
+    }
+
+    75% {
+        opacity: 0;
+        transform: translateY(-25%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes logoIn {
+    from {
+        opacity: 0;
+        scale: 0;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes logoTextIn {
+    from {
+        opacity: 0;
+        transform: translateX(-55%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
