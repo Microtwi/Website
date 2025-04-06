@@ -40,6 +40,7 @@ body {
     background: #181330;
     color: white;
     animation: transitionIn .5s ease-out;
+    text-underline-offset: 5px;
 }
 
 ::selection {
@@ -511,6 +512,29 @@ nav ul {
     margin-bottom: -3px;
 }
 
+.footerBG {
+    border: 1.5px solid rgb(255, 255, 255, .05);
+    border-radius: 11px;
+    text-align: center;
+    background: #3D316995;
+    backdrop-filter: blur(10px);
+    width: auto;
+    padding: 9px;
+    margin-bottom: 7px;
+    margin-left: .5%;
+    margin-right: .5%;
+}
+
+.footerContent {
+    border: 1.5px solid rgb(255, 255, 255, .05);
+    border-radius: 11px;
+    margin-left: 25%;
+    width: 50%;
+    display: grid;
+    gap: 5px;
+    grid-template-areas: "div div";
+}
+
 @media (max-width:950px) {
     nav ul {
         padding: 0%;
@@ -560,6 +584,12 @@ nav ul {
 
     .fullscreenImageBG.active {
         scale: 1.2;
+    }
+
+    .footerContent {
+        margin-left: 0%;
+        width: 100%;
+        grid-template-areas: "div";
     }
 }
 
@@ -687,19 +717,6 @@ nav ul {
 
 .logoTextAnim {
     animation: logoTextIn .7s ease-out;
-}
-
-.footer {
-    border: 1.5px solid rgb(255, 255, 255, .05);
-    border-radius: 11px;
-    text-align: center;
-    background: #3D316995;
-    backdrop-filter: blur(10px);
-    width: auto;
-    padding: 9px;
-    margin-bottom: 7px;
-    margin-left: .5%;
-    margin-right: .5%;
 }
 
 @keyframes transitionIn {
