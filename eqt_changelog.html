@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style_0.10.00.00.css">
+    <script src="core_0.10.00.00.js"></script>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <title>Microtwi - Equinox Tales Changelog</title>
+</head>
+
+<script>
+    setTimeout(initializedContextMenu, 100);
+    setTimeout(initializedModalVers, 150);
+
+    // Load your files dynamically
+    loadTextFile("Assets/EQT Updates/Update 0.10.00.00.txt", "Update 0.10.00.00");
+
+    function loadTextFile(filePath, elementId) {
+        fetch(filePath)
+            .then(res => {
+                if (!res.ok) throw new Error(`File not found: ${filePath}`);
+                return res.text();
+            })
+            .then(text => {
+                // Convert newlines to <br> and set content
+                document.getElementById(elementId).innerHTML = text.replace(/\n/g, "<br>");
+            })
+            .catch(err => {
+                console.error(err);
+                document.getElementById(elementId).innerHTML = "Failed to load content.";
+            });
+    }
+
+</script>
+
+<body>
+    <div class="bgImageEQT"></div>
+
+    <nav>
+        <input type="checkbox" id="check">
+        <ul>
+            <label for="check" class="checkbtn"><img src="Assets/logo.png" height="40"></label>
+            &nbsp;
+            <a href="eqt.html" class="menuLink">Back</a>
+            &nbsp;
+            <a href="#Update 0.10.00.00" class="menuLink">Latest Dev Version</a>
+            &nbsp;
+            <a href="#Update 0.10.00.00" class="menuLink">Latest Stable Version</a>
+            &nbsp;
+            <a href="#Update 0.10.00.00" class="menuLink">Update 0.10.00.00</a>
+            &nbsp;
+        </ul>
+    </nav>
+
+    <ul id="context-menu">
+        <li>
+            <button class="menuLinkLongAlt" id="button-reload"><img src="Assets/UI Icons/reload.png" height="15">
+                Reload</button>
+        </li>
+
+        <hr id="history-actions-context-menu-section" class="line">
+
+        <li>
+            <button class="menuLinkLongAlt" id="button-back"><img src="Assets/UI Icons/back.png" height="15">
+                Back</button>
+        </li>
+        <li>
+            <button class="menuLinkLongAlt" id="button-forward"><img src="Assets/UI Icons/forward.png" height="15">
+                Forward</button>
+        </li>
+
+        <hr id="quick-actions-context-menu-section" class="line">
+
+        <li>
+            <button class="menuLinkLongAlt" id="button-copy"><img src="Assets/UI Icons/copy.png" height="15">
+                Copy</button>
+        </li>
+        <li>
+            <button class="menuLinkLongAlt" id="button-open-new-tab"><img src="Assets/UI Icons/open-tab.png"
+                    height="15">
+                Open In New Tab</button>
+        </li>
+        <li>
+            <button class="menuLinkLongAlt" id="button-zoom"><img src="Assets/UI Icons/magnify.png" height="15"> Zoom In
+                The
+                Image</button>
+        </li>
+
+        <hr id="advance-actions-context-menu-section" class="line">
+
+        <li>
+            <button class="menuLinkLongAlt" id="button-print"><img src="Assets/UI Icons/print.png" height="15">
+                Print / Save</button>
+        </li>
+        <li>
+            <button class="menuLinkLongAlt" id="button-share"><img src="Assets/UI Icons/share.png" height="15">
+                Share</button>
+        </li>
+    </ul>
+
+    <br>
+    <br>
+
+    <div class="fullscreenImageBG"></div>
+    <div class="offset">
+        <br>
+        <div class="contentBg">
+            <a name="Update 0.10.00.00"></a>
+            <b class="title">Update 0.10.00.00</b>
+            <br><br>
+            <a href="Assets/EQT Updates/Update 0.10.00.00.txt" download target="_blank" class="menuLinkAlt2">
+                <b>Get The Changelog</b>
+            </a>
+            &nbsp;
+            <a href="https://microtwi.com" download target="_blank" class="menuLinkAlt2">
+                <b>Get The Game</b>
+            </a>
+            <br><br>
+            <div id="Update 0.10.00.00" class="contentBg" type="text/plain">Loading Changelog...</div>
+        </div>
+        <br>
+    </div>
+
+    <!-- <footer>
+        <div class="footerBG">
+            <div class="footerContent">
+                <a href="privacy_policy.html" class="menuLink">© 2025 Microtwi. All rights reserved.</a>
+                <a href="mailto:official@microtwi.com" class="menuLink">Contact: official@microtwi.com</a>
+            </div>
+        </div>
+    </footer> -->
+
+</body>
+
+</html>

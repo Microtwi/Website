@@ -1,0 +1,9 @@
+{
+    "Name": "New Update Available!",
+    "Description": "<b><color=#bbbbbb>The update 0.01.00.00 is now available!</b></color><br> <size=17> This is a new test release",
+    "PC_Version": "0.01.00.00",
+    "Android_Version": "0.01.00.00",
+    "Url": "https://microtwi.com",
+    "Changelog_Url": "https://microtwi.com",
+    "Rating_Url": "https://microtwi.com"
+}

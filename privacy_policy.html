@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style_0.10.00.00.css">
+    <script src="core_0.10.00.00.js"></script>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <title>Microtwi - Privacy</title>
+</head>
+
+<script>
+    setTimeout(initializedContextMenu, 100);
+    setTimeout(initializedModalVers, 150);
+
+    fetch("Assets/Notice/Terms.txt")
+        .then(res => {
+            if (!res.ok) throw new Error("File not found");
+            return res.text();
+        })
+        .then(text => {
+            const colored = text
+                .split("\n")
+                .map(line => {
+                    if (line[1] == "." || line.includes("TERMS")) {
+                        return `<span style="color: #d2b575;; font-weight: bold;">${line}</span>`;
+                    }
+                    return line;
+                })
+                .join("<br>");
+            document.getElementById("termsContainer").innerHTML = colored;
+        })
+        .catch(err => {
+            document.getElementById("termsContainer").innerHTML =
+                "Failed to load Terms of Use.";
+            console.error(err);
+        });
+</script>
+
+<body>
+    <div class="bgImageEQT"></div>
+
+    <nav>
+        <input type="checkbox" id="check">
+        <ul>
+            <label for="check" class="checkbtn"><img src="Assets/logo.png" height="40"></label>
+            &nbsp;
+            <a href="main_page.html" class="menuLink">Home</a>
+            &nbsp;
+            <a href="about.html" class="menuLink">About</a>
+            &nbsp;
+            <a href="eqt.html" class="menuLink">Equinox Tales</a>
+            &nbsp;
+            <a href="music.html" class="menuLink">Music</a></img>
+        </ul>
+    </nav>
+
+    <dialog class="modal" id="version-modal">
+        <iframe width="250px" height="30px" src="ver_modal.html" frameborder="0" marginheight="0" marginwidth="0"
+            sandbox="allow-forms allow-modals allow-orientation-lock allow-popups allow-same-origin allow-scripts"
+            scrolling="yes" allowfullscreen mozallowfullscreen msallowfullscreen webkitallowfullscreen></iframe>
+        <button class="menuLinkLong" id="button-close-version-modal">Close</button>
+    </dialog>
+
+    <ul id="context-menu">
+        <li>
+            <button class="menuLinkLongAlt" id="button-reload"><img src="Assets/UI Icons/reload.png" height="15">
+                Reload</button>
+        </li>
+
+        <hr id="history-actions-context-menu-section" class="line">
+
+        <li>
+            <button class="menuLinkLongAlt" id="button-back"><img src="Assets/UI Icons/back.png" height="15">
+                Back</button>
+        </li>
+        <li>
+            <button class="menuLinkLongAlt" id="button-forward"><img src="Assets/UI Icons/forward.png" height="15">
+                Forward</button>
+        </li>
+
+        <hr id="quick-actions-context-menu-section" class="line">
+
+        <li>
+            <button class="menuLinkLongAlt" id="button-copy"><img src="Assets/UI Icons/copy.png" height="15">
+                Copy</button>
+        </li>
+        <li>
+            <button class="menuLinkLongAlt" id="button-open-new-tab"><img src="Assets/UI Icons/open-tab.png"
+                    height="15">
+                Open In New Tab</button>
+        </li>
+        <li>
+            <button class="menuLinkLongAlt" id="button-zoom"><img src="Assets/UI Icons/magnify.png" height="15"> Zoom In
+                The
+                Image</button>
+        </li>
+
+        <hr id="advance-actions-context-menu-section" class="line">
+
+        <li>
+            <button class="menuLinkLongAlt" id="button-print"><img src="Assets/UI Icons/print.png" height="15">
+                Print / Save</button>
+        </li>
+        <li>
+            <button class="menuLinkLongAlt" id="button-share"><img src="Assets/UI Icons/share.png" height="15">
+                Share</button>
+        </li>
+    </ul>
+
+    <br>
+    <br>
+
+    <div class="fullscreenImageBG"></div>
+
+    <div class="offset">
+        <!-- EQT Privacy -->
+        <!-- <object data="Assets/Notice/Terms of use.html" type="text/plain" class="terms">
+            <a href="Assets/Notice/Terms of use.html">Text could not load!</a>
+        </object> -->
+        <div id="termsContainer" class="contentBg">Loading Terms of Use...</div>
+        <br><br>
+    </div>
+
+    <footer>
+        <div class="footerBG">
+            <div class="footerContent">
+                <a href="privacy_policy.html" class="menuLink">© 2025 Microtwi. All rights reserved.</a>
+                <a href="mailto:official@microtwi.com" class="menuLink">Contact: official@microtwi.com</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

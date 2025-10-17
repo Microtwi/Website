@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style_0.10.00.00.css">
+    <script src="core_0.10.00.00.js"></script>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <title>Microtwi</title>
+</head>
+
+<script>
+    setTimeout(initializedContextMenu, 100);
+    setTimeout(initializedModalVers, 150);
+</script>
+
+<body>
+    <div class="bgImageEQT"></div>
+
+    <nav>
+        <input type="checkbox" id="check">
+        <ul>
+            <label for="check" class="checkbtn"><img src="Assets/logo.png" height="40"></label>
+            &nbsp;
+            <a href="main_page.html" class="menuLinkDec">Home</a>
+            &nbsp;
+            <a href="about.html" class="menuLink">About</a>
+            &nbsp;
+            <a href="eqt.html" class="menuLink">Equinox Tales</a>
+            &nbsp;
+            <a href="music.html" class="menuLink">Music</a></img>
+        </ul>
+    </nav>
+
+    <dialog class="modal" id="version-modal">
+        <iframe width="250px" height="30px" src="ver_modal.html" frameborder="0" marginheight="0" marginwidth="0"
+            sandbox="allow-forms allow-modals allow-orientation-lock allow-popups allow-same-origin allow-scripts"
+            scrolling="yes" allowfullscreen mozallowfullscreen msallowfullscreen webkitallowfullscreen></iframe>
+        <button class="menuLinkLong" id="button-close-version-modal">Close</button>
+    </dialog>
+
+    <ul id="context-menu">
+        <li>
+            <button class="menuLinkLongAlt" id="button-reload"><img src="Assets/UI Icons/reload.png" height="15">
+                Reload</button>
+        </li>
+
+        <hr id="history-actions-context-menu-section" class="line">
+
+        <li>
+            <button class="menuLinkLongAlt" id="button-back"><img src="Assets/UI Icons/back.png" height="15">
+                Back</button>
+        </li>
+        <li>
+            <button class="menuLinkLongAlt" id="button-forward"><img src="Assets/UI Icons/forward.png" height="15">
+                Forward</button>
+        </li>
+
+        <hr id="quick-actions-context-menu-section" class="line">
+
+        <li>
+            <button class="menuLinkLongAlt" id="button-copy"><img src="Assets/UI Icons/copy.png" height="15">
+                Copy</button>
+        </li>
+        <li>
+            <button class="menuLinkLongAlt" id="button-open-new-tab"><img src="Assets/UI Icons/open-tab.png"
+                    height="15">
+                Open In New Tab</button>
+        </li>
+        <li>
+            <button class="menuLinkLongAlt" id="button-zoom"><img src="Assets/UI Icons/magnify.png" height="15">
+                Zoom In
+                The
+                Image</button>
+        </li>
+
+        <hr id="advance-actions-context-menu-section" class="line">
+
+        <li>
+            <button class="menuLinkLongAlt" id="button-print"><img src="Assets/UI Icons/print.png" height="15">
+                Print / Save</button>
+        </li>
+        <li>
+            <button class="menuLinkLongAlt" id="button-share"><img src="Assets/UI Icons/share.png" height="15">
+                Share</button>
+        </li>
+    </ul>
+
+    <br>
+    <br>
+
+    <div class="fullscreenImageBG"></div>
+    </div>
+    <div class="offset">
+        <!-- About -->
+        <div class="contentBg">
+            <div class="title">
+                <b>About Me</b>
+            </div>
+            <br>
+            <div class="description">
+                <b>I create games as a solo game developer! My goal is to make something that people will enjoy.</b>
+            </div>
+            <br>
+            <div class="mainDropDown">
+                Quick Links:
+                <div class="quickLinks">
+                    <a href="https://www.youtube.com/@Microtwi" class="menuLink">
+                        <img src="Assets/yt_logo.png" height="20px"></img>
+                        Youtube Channel
+                    </a>
+                    <a href="https://microtwi.itch.io/equinox-tales" class="menuLink">
+                        <img src="Assets/itch_logo.png" height="20px"></img>
+                        Itch.io Page
+                    </a>
+                    <a href="https://github.com/Microtwi" class="menuLink">
+                        <img src="Assets/github_logo.png" height="20px"></img>
+                        GitHub Page
+                    </a>
+                </div>
+                <a href="privacy_policy.html" class="menuLink">
+                    Click Here for the Privacy Policy!
+                </a>
+            </div>
+        </div>
+        <br>
+
+        <!-- EQT -->
+        <div class="contentBg">
+            <div class="title">
+                <b>Equinox Tales</b>
+            </div>
+            <br>
+            <div class="description">
+                <b>Genre:</b> An Fantasy Action-Adventure RPG - Age Rating: 16+
+                <ul type="none">
+                </ul>
+                <b>Description:</b> Equinox Tales is an action-adventure RPG set in the vast Equinoxia Multiverse /
+                Galaxy. Join Stella and Nova in their fight against the evil king!
+                <br><br>
+                <a class="altBtn" href="eqt.html">Check it out!</a>
+                <br>
+                <img src="Assets/eqt-bg.png" width="100%" height="100%" class="rounded-corners" />
+            </div>
+        </div>
+        <br>
+
+        <!-- Music -->
+        <div class="contentBg">
+            <div class="title">
+                <b>I also make music</b>
+            </div>
+            <br>
+            <div class="description">
+                One of my goals was to create a unique musical experience for the players, so I also decided to learn
+                music production to compose my own tracks. Here is a sample of my work:
+            </div>
+            <br>
+            <audio controls loop src="Assets/Audio/Equinox Tales - Theme Main Menu.mp3" class="audioPlayer"></audio>
+        </div>
+        <br>
+    </div>
+
+    <footer>
+        <div class="footerBG">
+            <div class="footerContent">
+                <a href="privacy_policy.html" class="menuLink">© 2025 Microtwi. All rights reserved.</a>
+                <a href="mailto:official@microtwi.com" class="menuLink">Contact: official@microtwi.com</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

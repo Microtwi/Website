@@ -1,0 +1,100 @@
+TERMS OF US, RULES AND PRIVACY POLICY - Last updated on: 12th October 2025
+
+These Terms of Use outline the rules for interacting with Microtwi's products, including the game, website, and related media. By using these products, you agree to these terms.
+
+0. DEFINITIONS
+
+- "I/My": Refers to the creator and rights holder of the game, website, and related content.
+- "Microtwi": The brand name used to identify the individual creator of the game, website, and related content. All rights, responsibilities, and obligations described in these Terms of Use apply to the individual creator operating under the name "Microtwi".
+- "You/User/Player/Fans": Refers to the individuals interacting with Microtwi's products, such as the game, website, controller, or community.
+- "Fan Works": Refers to creative works made by fans that are inspired by Microtwi's products, such as drawings, videos, stories, small personal games, etc.
+- "Products": Refers to the game, website, downloadable materials, and/or any related media or content provided by Microtwi.
+- "EQT": The name of the game: Equinox Tales.
+- "OC": Original fan created character.
+- "Licensed Assets": Third-party tools, models, sounds, or other materials used in or for any Microtwi products under specific licenses, distributed by others parties/companies (sometimes called: "Third-Party Services") that do not transfer redistribution rights to users.
+
+1. COPYRIGHT AND CONTENT USE
+
+Microtwi encourages creativity and fan involvement. However, certain rules must be establish to protect original and licensed content:
+
+1.1 Ownership of Content
+The game and website contain:
+- Original content owned by Microtwi, including storylines, characters, unique character patterns/textures, custom animations, all textures, 3D models of buildings and items, UI design, original music, and most of the code.
+- Licensed content that Microtwi has permission to use but cannot grant others permission to reuse. This includes certain environment models (e.g. cliffs, trees), the 3D horse model, some character animations, the font, and all sound effects.
+Unauthorized use, reproduction, or distribution of any content (original or licensed) is prohibited unless explicitly permitted in these terms or personally by Microtwi.
+
+1.2 Fan Content and Use Guidelines
+Fans are encouraged to create and share fan-works such as art, stories, videos, or small fan-games, provided these rules are followed:
+
+1.2.1 General uses:
+- Fan works must not be sold or monetized directly unless specified below (1.2.2).
+- For commercial organizations (companies): Using game content (characters, assets, etc.) for any commercial product, promotion, or unrelated content without explicit permission is strictly prohibited.
+- For high-reach individuals (fans, Youtube channels that have a larger audience reach and/or more revenue), you should personally contact me directly trough the official Microtwi email address.
+- For small individuals / personal private projects, you are free to use them.
+
+1.2.2 Conditions to use licensed content:
+- You may enable monetization on platforms like YouTube for gameplay videos, commentary, music, stories, animations, or similar content.
+- You may sell limited items inspired by the game (e.g. a plush or artwork) through donations or commission-based systems, but:
+- You cannot mass-produce or explicitly advertise items for sale unless you also purchase a license from the original creators of the assets used in the game (e.g. horse or tree models).
+- The commission / donations / "selling" of items must not explicitly state: "I will draw your EQT OC!" (too direct/advertised), instead "I take commissions for drawing your OC - any type of genre/art" (implied/not specified/not advertised).
+
+1.2.3 External assets licensing
+Some assets in the game are licensed to Microtwi and cannot be reused in any form without the original licensor's permission. For example:
+- The 3D horse model.
+- Environment models like cliffs and trees.
+- Sound effects (SFX)
+
+If fan works include these assets, it is your responsibility to obtain the appropriate permissions.
+
+1.2.4 Attribution:
+When including any Microtwi content in your fan works, you should always credit Microtwi and link to the official website (microtwi.com), but also credit/link the original third party licensed assets where applicable!
+
+2. ASSET USE AND MODDING POLICY
+
+2.1 Exporting or Redistributing Assets:
+- Extracting or redistributing specific game assets (e.g. models, textures, animations, sounds) is strictly prohibited. This is done to protect Microtwi's licensed assets from third-parties.
+
+2.2 Modding:
+- Modding is not officially supported by Microtwi, and any modifications to the game are done at the user's own risk.
+- Licensed assets (e.g. 3D models, animations) remain subject to their original licensing terms. If you modify, export, or misuse these assets, you assume full responsibility for any resulting legal or financial consequences. Microtwi is not liable for such actions.
+- Mods that violate third-party licensing agreements, redistribute prohibited content, or misrepresent themselves as official or endorsed by Microtwi may result in enforcement actions, including takedown requests or legal action.
+
+2.3 Disclaimer of Liability:
+- Microtwi is not responsible for any issues caused by mods, including but not limited to crashes, data corruption, asset misuse, third-party claims, performance problems, or similar. Users assume full responsibility for modding-related risks.
+
+3. DATA COLLECTION AND PRIVACY
+
+3.1 Game Data Collection
+- Microtwi's game and website do not collect, store, or process personal data of any kind.
+- No cookies, analytics, or tracking are used directly by Microtwi.
+- If this changes, users will be notified and given the option to review updated terms.
+
+3.2 External Services
+Microtwi's products may include links to or integrations with third-party services, such as:
+- Google Drive or Google Forms (for feedback or reports)
+- Itch.io (for game distribution)
+- YouTube (for trailers or gameplay videos)
+- GitHub (for open-source tools or scripts)
+- Unity (game engine used to build the game)
+
+These external platforms may collect data under their own privacy policies and/or have their own terms and conditions. Microtwi does not control or manage data collected by third parties. Review those services respective privacy policies.
+
+3.3 Uploaded Media
+If you submit screenshots, videos, or other materials (for bug reports or support), they are used solely for troubleshooting and will not be shared publicly.
+
+4. AGE REQUIREMENT
+
+Microtwi's game and website are intended for users aged 16 and older. By accessing or using Microtwi's products, you confirm that you meet this age requirement. Microtwi will not verify if you are above this age, as this would have involved collecting very sensitive and personal data; leading to an degraded experience for the target audience/users that do use these products.
+
+If you access or use the game while underage, you do it at your own risk, and Microtwi cannot be held liable for any resulting issues.
+
+5. UPDATES TO TERMS
+
+These Terms of Use may be updated periodically to reflect new features, policies, or legal requirements.
+Continued use of Microtwi products constitutes acceptance of any updated terms. Users are encouraged to review the terms regularly.
+
+6. ENFORCEMENT
+
+Violations of these terms may result in actions such as:
+- Removal of infringing content (e.g. DMCA takedowns).
+- Legal action: third-party legal claims resulting from your misuse of licensed or protected content will be your responsibility.

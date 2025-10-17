@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style_0.10.00.00.css">
+    <script src="core_0.10.00.00.js"></script>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <title>Microtwi - Equinox Tales</title>
+</head>
+
+<script>
+    setTimeout(initializedContextMenu, 100);
+    setTimeout(initializedModalVers, 150);
+</script>
+
+<body>
+    <div class="bgImageEQT"></div>
+
+    <nav>
+        <input type="checkbox" id="check">
+        <ul>
+            <label for="check" class="checkbtn"><img src="Assets/logo.png" height="40"></label>
+            &nbsp;
+            <a href="main_page.html" class="menuLink">Home</a>
+            &nbsp;
+            <a href="about.html" class="menuLink">About</a>
+            &nbsp;
+            <a href="eqt.html" class="menuLinkDec">Equinox Tales</a>
+            &nbsp;
+            <a href="music.html" class="menuLink">Music</a></img>
+        </ul>
+    </nav>
+
+    <dialog class="modal" id="version-modal">
+        <iframe width="250px" height="30px" src="ver_modal.html" frameborder="0" marginheight="0" marginwidth="0"
+            sandbox="allow-forms allow-modals allow-orientation-lock allow-popups allow-same-origin allow-scripts"
+            scrolling="yes" allowfullscreen mozallowfullscreen msallowfullscreen webkitallowfullscreen></iframe>
+        <button class="menuLinkLong" id="button-close-version-modal">Close</button>
+    </dialog>
+
+    <ul id="context-menu">
+        <li>
+            <button class="menuLinkLongAlt" id="button-reload"><img src="Assets/UI Icons/reload.png" height="15">
+                Reload</button>
+        </li>
+
+        <hr id="history-actions-context-menu-section" class="line">
+
+        <li>
+            <button class="menuLinkLongAlt" id="button-back"><img src="Assets/UI Icons/back.png" height="15">
+                Back</button>
+        </li>
+        <li>
+            <button class="menuLinkLongAlt" id="button-forward"><img src="Assets/UI Icons/forward.png" height="15">
+                Forward</button>
+        </li>
+
+        <hr id="quick-actions-context-menu-section" class="line">
+
+        <li>
+            <button class="menuLinkLongAlt" id="button-copy"><img src="Assets/UI Icons/copy.png" height="15">
+                Copy</button>
+        </li>
+        <li>
+            <button class="menuLinkLongAlt" id="button-open-new-tab"><img src="Assets/UI Icons/open-tab.png"
+                    height="15"> Open In New Tab</button>
+        </li>
+        <li>
+            <button class="menuLinkLongAlt" id="button-zoom"><img src="Assets/UI Icons/magnify.png" height="15"> Zoom In
+                The
+                Image</button>
+        </li>
+
+        <hr id="advance-actions-context-menu-section" class="line">
+
+        <li>
+            <button class="menuLinkLongAlt" id="button-print"><img src="Assets/UI Icons/print.png" height="15">
+                Print / Save</button>
+        </li>
+        <li>
+            <button class="menuLinkLongAlt" id="button-share"><img src="Assets/UI Icons/share.png" height="15">
+                Share</button>
+        </li>
+    </ul>
+
+    <br>
+    <br>
+
+    <div class="fullscreenImageBG"></div>
+    <div class="offset">
+
+        <!-- Main Image -->
+        <div class="contentBg" align="center">
+            <div class="eqt_bg">
+                <img src="Assets/eqt-bg.png" width="100%" height="100%" class="rounded-corners" />
+                <img src="Assets/EQT_Logo_Full.png" id="eqtLogo" />
+            </div>
+            <br>
+            <a class="altBtn" href="https://microtwi.itch.io/equinox-tales">Get The Game! (Coming Soon...)</a>
+            <br>
+            <a class="altBtn" href="eqt_changelog.html"> View The Changelog! </a>
+            <!-- <br> -->
+            <!-- <a class="altBtn" href="https://forms.gle/5EGuMckMZ5xPma9W8" target="_blank">Give Feedback! </a> -->
+        </div>
+        <br>
+
+        <!-- About -->
+        <div class="contentBg">
+            <div class="title">
+                <b>About & Updates</b>
+            </div>
+            <br>
+            <div class="sub-title">
+                <b>About:</b>
+            </div>
+            <br>
+            <div class="description">
+                <b>Genre:</b> An Fantasy Action-Adventure RPG - Age Rating: 16+
+                <ul type="none">
+                </ul>
+                <b>Description:</b> Equinox Tales is an action-adventure RPG set in the Equinoxia Multiverse / Galaxy.
+                <br><br>
+                Embark on a journey through a world full of mysteries, challenges, some light horror and talking
+                equines. Play as Cedric, Rusty, Nova, or Stella; each with unique strengths and fears which will impact
+                how you handle battles.
+                <br><br>
+                At the core of the game is the Confidence System, which reflects a character's mentality, how confident
+                or scared they are. Confidence directly impacts combat performance, and each character has unique ways
+                of gaining or losing it. You'll need to adapt to their personalities and fighting styles to succeed.
+                <br><br>
+                The first chapter follows Stella, the queen of Meadowvale, who must push trough dangers despite a her
+                tragic past; setting the stage for this emotional roller coaster, narrative-driven story.
+            </div>
+            <br>
+            <div class="sub-title">
+                Here are some short descriptions of some characters you meet:
+            </div>
+            <br>
+            <div class="description">
+                <div class="tableBg">
+                    <div class="imgDesc">
+                        <b>Stella</b>
+                        <br>
+                        <br>
+                        A skilled warrior haunted by her past. She recovers confidence through small victories and every
+                        landed strike, but each loss or hit cuts deep.
+                    </div>
+                    <div class="imgDesc">
+                        <b>Cedric</b>
+                        <br>
+                        <br>
+                        A stubborn fighter who confidence thrives on big wins, risk-taking, but struggles with small
+                        setbacks.
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="sub-title">
+                <b>Updates:</b>
+            </div>
+            <br>
+            <div class="description">
+                <b>Stable Version:</b> Coming Soon...
+                <br><br>
+                <b>Dev Version:</b> Coming Soon...
+            </div>
+        </div>
+        <br>
+
+        <!-- Features -->
+        <div class="contentBg">
+            <div>
+                <div class="title">
+                    <b>Gameplay & Screenshots</b>
+                </div>
+                <br>
+                <div class="tableBg">
+                    <div class="imgDesc">
+                        <b>Confidence System</b>
+                        <br><br>
+                        <img src="Assets/confidence_new.gif" loading="lazy" width="100%" align="center"
+                            class="rounded-corners">
+                        <p>
+                            Every action affects a character’s confidence, shaping performance and reputation.
+                        </p>
+                    </div>
+                    <div class="imgDesc">
+                        <b>Combat</b>
+                        <br><br>
+                        <img src="Assets/combat-min.gif" loading="lazy" width="100%" align="center"
+                            class="rounded-corners">
+                        <p>
+                            Fast-paced battles where confidence and strategy matter. Take on one group of enemies, even
+                            multiple groups of group of enemy at the same time if you feel brave..... but be
+                            careful..... letting confidence drop to 0% disables certain abilities, however you will
+                            never die from it.
+                        </p>
+                    </div>
+                    <div class="imgDesc">
+                        <b>Play as any character you want!</b>
+                        <br><br>
+                        <img src="Assets/char.png" loading="lazy" width="100%" align="center" class="rounded-corners">
+                        <p>
+                            Play as any character you want. Each has unique fighting styles that change the tactics
+                            available to yo, some more changing, some more easy.
+                            <br>
+                            Note: Some characters will be unlock through out the story!
+                        </p>
+                    </div>
+                    <div class="imgDesc">
+                        <b>Immersive Storytelling</b>
+                        <br><br>
+                        <img src="Assets/world1.png" loading="lazy" width="100%" align="center" class="rounded-corners">
+                        <p>
+                            Uncover a world full of secrets, choices, and emotional depth.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <!-- System Requirements -->
+        <div class="contentBg">
+            <div class="title">
+                <b>System Requirements</b>
+            </div>
+            <br>
+            <div class="sub-title">
+                <b>Available on Linux and Windows</b>
+            </div>
+            <br>
+            <div class="description">
+                <b> OS:</b> Windows 10 + X64 or Latest Ubuntu Release
+                <br>
+                <br> Tested on Ubuntu 25.04, X64, Gnome 48, Wayland
+            </div>
+            <br>
+            <div class="sub-title">
+                <b>Minimum Requirements:</b>
+            </div>
+            <br>
+            <div class="description">
+                <b>DirectX:</b> Version 11 (Windows only)
+                <br>
+                <b>Memory:</b> 4 GB
+                <br>
+                <b>Processor:</b> Intel I3 4000U
+                <br>
+                <b>Graphics:</b> Intel HD Graphics 4500
+            </div>
+            <br>
+            <div class="sub-title">
+                <b>Recommended Requirements:</b>
+            </div>
+            <br>
+            <div class="description">
+                <b>DirectX:</b> Version 11 (Windows only)
+                <br>
+                <b>Memory:</b> 16 GB
+                <br>
+                <b>Processor:</b> AMD Ryzen 7 4800H
+                <br>
+                <b>Graphics:</b> NVIDIA GeForce GTX 1650 Ti
+            </div>
+        </div>
+        <br>
+
+        <!-- Download Link -->
+        <div class="contentBg">
+            <div class="title">
+                <b>Download Link</b>
+            </div>
+            <br>
+            <div class="sub-title">
+                <b>Stable Version:</b>
+            </div>
+            <br>
+            <div class="description">
+                <b>Coming Soon...
+            </div>
+            <br>
+            <div class="sub-title">
+                <b>Dev Version:</b>
+            </div>
+            <br>
+            <div class="description">
+                <b>Coming Soon...
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <footer>
+        <div class="footerBG">
+            <div class="footerContent">
+                <a href="privacy_policy.html" class="menuLink">© 2025 Microtwi. All rights reserved.</a>
+                <a href="mailto:official@microtwi.com" class="menuLink">Contact: official@microtwi.com</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
