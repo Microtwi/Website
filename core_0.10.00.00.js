@@ -245,9 +245,19 @@ function initializedContextMenu() {
         window.print();
     });
 
-    contextZoomBtn?.addEventListener('click', () => {
+    contextZoomBtn?.addEventListener("click", () => {
         zoomImage();
     });
+
+    document.addEventListener("click", e => {
+        const bg = document.querySelector(".fullscreenImageBG");
+
+        // CLOSE fullscreen if clicking background or fullscreen image
+        if (e.target === bg || e.target.classList.contains("fullscreenImgContext")) {
+            closeImage();
+        }
+    });
+
 }
 
 let winWidth = window.innerWidth;
@@ -255,32 +265,10 @@ let winHeight = window.innerHeight;
 
 function zoomImage() {
     if (currentTargetType == "image") {
-        var div = document.querySelector(".fullscreenImageBG");
-        div.classList.add("active");
-
-        var oldDiv = document.querySelector("#fullscreenImgContext");
-
-        if (oldDiv != null) {
-            oldDiv.remove();
-        }
-
-        let newWinWidth = window.innerWidth;
-        let newWinHeight = window.innerHeight;
-        if ((newWinWidth - winWidth > 150 || newWinWidth - winWidth < -150) && (newWinHeight - winHeight > 50 || newWinHeight - winHeight < -50)) {
-            winWidth = window.innerWidth;
-            winHeight = window.innerHeight;
-        }
-
-        div.insertAdjacentHTML("beforeend", '<img src="' + currentTarget + '"width="' + winWidth / 1.3 + 'px" class="fullscreenImage" id="fullscreenImgContext"></img>');
-
-        var newDiv = document.querySelector("#fullscreenImgContext");
-        newDiv?.addEventListener('click', () => {
-            closeImage();
-        })
-
-        newDiv.style.top = ((winHeight - newDiv.offsetHeight) / 2) + "px";
-        newDiv.style.left = ((winWidth - newDiv.offsetWidth) / 2) + "px";
-        // document.body.style.overflow = 'hidden';
+        const bg = document.querySelector(".fullscreenImageBG");
+        bg.innerHTML = `<img src="${currentTarget}" 
+                             class="fullscreenImage fullscreenImgContext" id="fullscreenImgContext">`;
+        bg.classList.add("active");
     }
 }
 

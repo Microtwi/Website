@@ -141,18 +141,21 @@ body {
     width: 22%;
 }
 
+/* full screen image */
 .fullscreenImageBG {
     scale: 0;
     background-color: rgb(0, 0, 0, .0);
     transition: .2s;
+    background-color: #3D316995;
 }
 
 .fullscreenImageBG.active {
     background-color: rgb(0, 0, 0, .8);
     backdrop-filter: blur(10px);
     border: 0px;
-    scale: 1.1;
+    scale: 1;
 
+    padding: 0px;
     top: 0%;
     left: 0%;
     height: 100%;
@@ -162,11 +165,20 @@ body {
 }
 
 .fullscreenImage {
-    border: 7px solid #3D316915;
-    background-color: #3D316995;
-    border-radius: 11px;
-    z-index: 50;
     position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    max-width: 80vw;
+    max-height: 100vh;
+
+    background-color: #3D316955;
+    border-radius: 11px;
+
+    border-radius: 11px;
+    z-index: 51;
+    box-shadow: 0px 0px 15px 0px #6a57ad64;
 }
 
 .button {
@@ -189,7 +201,15 @@ body {
 .contentBg {
     padding: 11px;
     border-radius: 11px;
-    border: 1px solid rgb(255, 255, 255, .05);
+    border: 1px solid rgb(255, 255, 255, .1);
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 10px 3px rgb(19, 18, 32, .5);
+}
+
+.changelogContentBg {
+    padding: 11px;
+    border-radius: 11px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -355,7 +375,7 @@ nav ul {
     width: calc(100% - 20px);
     position: fixed;
     text-align: center;
-    box-shadow: 0 0 5px rgb(19, 18, 32);
+    box-shadow: 0px 0px 25px 5px rgb(19, 18, 32, 1);
     background: #3D316995;
     color: white;
     animation: menuIn .5s ease-out;
@@ -505,6 +525,7 @@ label {
 
 .footerBG {
     border: 1.5px solid rgb(255, 255, 255, .05);
+    box-shadow: 0px 0px 25px 5px rgb(19, 18, 32, 1);
     border-radius: 11px;
     text-align: center;
     background: #3D316995;
