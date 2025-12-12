@@ -1,0 +1,16 @@
+[
+  {
+    "version": "Update 0.10.00.00",
+    "date": "2026",
+    "summary": "First Test Release",
+    "tags": [
+      "Demo Build",
+      "Dev Build",
+      "Testing"
+    ],
+    "details": [
+      "The First Release, Demo"
+    ],
+    "download": "Assets/EQT Updates/Update 0.10.00.00.txt"
+  }
+]

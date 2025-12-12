@@ -37,14 +37,19 @@ body {
     font-family: myFont;
     text-align: left;
     text-shadow: 0 0 1px rgb(55, 55, 55);
-    background: #181330;
+    /* background: #10101d; */
+    background: #0a0a16;
+    /* background: #0a0a1f; */
     color: white;
-    animation: transitionIn .5s ease-out;
+    animation: transitionIn .7s ease-out;
     text-underline-offset: 5px;
+    line-height: 1.7;
+    font-size: calc(0.95rem + 0.08vw);
+    text-rendering: optimizeLegibility;
 }
 
 ::selection {
-    background: hsl(41, 50%, 55%);
+    background: hsl(223, 26%, 30%);
     color: white;
 }
 
@@ -81,7 +86,7 @@ body {
 }
 
 .line {
-    color: white;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .rounded-corners {
@@ -146,7 +151,7 @@ body {
     scale: 0;
     background-color: rgb(0, 0, 0, .0);
     transition: .2s;
-    background-color: #3D316995;
+    background-color: #2a2a5095;
 }
 
 .fullscreenImageBG.active {
@@ -173,12 +178,11 @@ body {
     max-width: 80vw;
     max-height: 100vh;
 
-    background-color: #3D316955;
-    border-radius: 11px;
+    background-color: #2a2a5060;
+    border-radius: 12px;
 
-    border-radius: 11px;
     z-index: 51;
-    box-shadow: 0px 0px 15px 0px #6a57ad64;
+    box-shadow: 0px 0px 75px 15px #2a2a5095;
 }
 
 .button {
@@ -199,19 +203,15 @@ body {
 }
 
 .contentBg {
-    padding: 11px;
+    padding: 12px;
     border-radius: 11px;
-    border: 1px solid rgb(255, 255, 255, .1);
-    background-color: rgba(255, 255, 255, 0.1);
-    box-shadow: 0px 0px 10px 3px rgb(19, 18, 32, .5);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    background-color: #22212dba;
+    box-shadow: 0px 18px 40px -30px rgba(0, 0, 0, 0.7);
+    position: relative;
 }
 
-.changelogContentBg {
-    padding: 11px;
-    border-radius: 11px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    background-color: rgba(255, 255, 255, 0.1);
-}
+
 
 .imgDesc {
     text-align: left;
@@ -253,6 +253,25 @@ body {
     overflow-x: auto;
 }
 
+.heroText {
+    text-align: center;
+    max-width: 175px;
+    margin-top: 5px;
+    letter-spacing: 0.12em+1px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: .1;
+    background-color: rgba(255, 255, 255, 0.055);
+    border: 1px solid rgb(255, 255, 255, .03);
+
+    /* padding-left: 8px; */
+    /* padding-right: 8px; */
+    /* padding-bottom: 4px; */
+    padding: 4px;
+
+    border-radius: 9999px;
+}
+
 .title {
     font-size: 32px;
     color: rgb(210, 181, 117);
@@ -266,6 +285,10 @@ body {
 .description {
     color: rgb(222, 222, 222);
     transition: .5s all;
+    line-height: 1.65;
+    letter-spacing: 0.02em;
+    max-width: none;
+    width: 100%;
 }
 
 .center-text {
@@ -274,13 +297,102 @@ body {
 
 .offset {
     text-align: left;
-    margin-top: 0px;
-    padding-top: 50px;
-    padding-left: 13%;
-    padding-right: 13%;
-    width: auto;
+    margin: 0 auto;
+    padding: 50px 5%;
+    width: min(1200px, calc(100% - 40px));
     color: white;
     transition: all .5s;
+    box-sizing: border-box;
+}
+
+.contentBg,
+.mainDropDown,
+.title,
+.sub-title,
+.description,
+.heroText {
+    letter-spacing: 0.015em;
+}
+
+.contentBg {
+    line-height: 1.6;
+}
+
+.title,
+.sub-title {
+    line-height: 1.45;
+}
+
+.changelog-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.changelog-lists ul {
+    margin: 0px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    color: rgba(255, 255, 255, 0.85);
+    border-radius: 11px;
+    border: 1px solid rgba(255, 255, 255, 0.035);
+    background-color: rgba(255, 255, 255, 0.035);
+}
+
+.changelog-lists .description {
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.changelogContentBg {
+    width: calc(100% + 10px);
+    padding: 5px;
+    margin-top: -10px;
+    margin-left: -20px;
+    border-radius: 11px;
+}
+
+.changelogContentBg hr {
+    color: rgb(255, 255, 255, .05);
+}
+
+.changelog-lists li {
+    margin-bottom: 4px;
+}
+
+.changelog-tags {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin: 0px;
+}
+
+.heroText.changelog-tag {
+    margin: 0px;
+    padding: 4px 10px;
+}
+
+input {
+    width: calc(100% - 20px);
+    border-radius: 11px;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, .15);
+    background: rgba(255, 255, 255, 0.07);
+    color: white;
+    font-family: myFont;
+    font-size: 15px;
+    transition: border .2s;
+}
+
+input:focus {
+    border-color: rgba(80, 140, 255, .9);
+    outline: none;
 }
 
 .audioPlayer {
@@ -335,7 +447,7 @@ body {
     list-style-type: none;
     position: fixed;
     width: auto;
-    background: #2b225695;
+    background: #222236be;
     border: 1.5px solid rgb(255, 255, 255, .05);
     backdrop-filter: blur(10px);
     border-radius: 11px;
@@ -376,10 +488,10 @@ nav ul {
     position: fixed;
     text-align: center;
     box-shadow: 0px 0px 25px 5px rgb(19, 18, 32, 1);
-    background: #3D316995;
+    background: rgba(36, 36, 68, 0.85);
     color: white;
     animation: menuIn .5s ease-out;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
     overflow-y: hidden;
     overflow-x: auto;
     white-space: nowrap;
@@ -389,6 +501,46 @@ nav ul {
     align-items: center;
     display: flex;
     justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.logo-hamburger {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 0 0 auto;
+}
+
+.hamburger-toggle {
+    display: none;
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbtn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hamburger-lines {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: center;
+}
+
+.hamburger-lines span {
+    width: 22px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 999px;
+    transition: transform .25s ease, opacity .25s ease;
 }
 
 #check {
@@ -401,9 +553,26 @@ nav ul {
     height: calc(100% - 10px);
     /* border-radius: 0px;calc(100% - 10px); */
     margin: 5px;
-    display: inline;
+    display: flex;
     white-space: pre-line;
     overflow-y: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 20px;
+    gap: 10px;
+}
+
+#check:checked~ul .hamburger-lines span:first-child {
+    transform: translateY(6px) rotate(45deg);
+}
+
+#check:checked~ul .hamburger-lines span:nth-child(2) {
+    opacity: 0;
+}
+
+#check:checked~ul .hamburger-lines span:last-child {
+    transform: translateY(-6px) rotate(-45deg);
 }
 
 .menuLinkLongAlt {
@@ -440,6 +609,13 @@ label {
     transition: .3s;
 }
 
+.menuLink.active {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.95);
+}
+
 .menuLinkLong {
     text-decoration: none;
     border: 1.5px solid rgb(255, 255, 255, .05);
@@ -466,22 +642,9 @@ label {
     transition: .3s;
 }
 
-.menuLinkDec {
-    border: 1.5px solid rgb(255, 255, 255, 0);
-    background-color: rgba(255, 255, 255, 0);
-    color: rgb(255, 255, 255);
-
-    border-radius: 8px;
-    font-size: 17px;
-    padding: 5px;
-    cursor: pointer;
-    transition: .3s;
-}
-
 .menuLink:hover,
 .menuLinkLong:hover,
 .menuLinkLongAlt:hover,
-.menuLinkDec:hover,
 .altBtn:hover,
 .checkbtn img:hover {
     border: 1.5px solid rgb(255, 255, 255, .05);
@@ -489,12 +652,14 @@ label {
 }
 
 .mainDropDown {
-    border: 1.5px solid rgb(255, 255, 255, .05);
-    background-color: rgba(255, 255, 255, 0.1);
+    border: 1.5px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.06);
     border-radius: 11px;
     padding: 11px;
     display: grid;
     gap: 10px;
+    backdrop-filter: blur(16px);
+    position: relative;
 }
 
 .quickLinks {
@@ -516,7 +681,10 @@ label {
     border-radius: 11px;
     display: grid;
     text-decoration: none;
+    box-shadow: 0px 5px 15px 5px rgb(19, 18, 32, .35);
     transition: .3s;
+
+    margin-top: 10px;
 }
 
 .quickLinks a img {
@@ -528,11 +696,12 @@ label {
     box-shadow: 0px 0px 25px 5px rgb(19, 18, 32, 1);
     border-radius: 11px;
     text-align: center;
-    background: #3D316995;
-    backdrop-filter: blur(10px);
+    background: rgba(36, 36, 68, 0.75);
+    backdrop-filter: blur(5px);
     width: auto;
     padding: 9px;
 
+    margin-top: -30px;
     margin-bottom: 10px;
     margin-left: 10px;
     margin-right: 10px;
@@ -553,41 +722,39 @@ label {
     nav ul {
         padding: 0%;
         height: 77px;
-        margin: 5px;
-        width: calc(100% - 10px);
+        margin: 0px;
+        margin-top: 10px;
+        width: calc(100% - 0px);
+        gap: 5px;
     }
 
     .offset {
-        padding-left: 5px;
-        padding-right: 5px;
-        margin: 0px;
-        width: calc(100% - 10px);
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 100%;
     }
 
     .rounded-corners {
         border-radius: 9px;
-        background-color: rgba(255, 255, 255, 0.2);
+        background-color: #ffffff33;
     }
 
     #context-menu {
         padding: 7px;
     }
 
-    .menuLinkLongAlt {
+    .menuLinkLongAlt,
+    .menuLink,
+    .menuLinkDec,
+    .menuLinkLong {
         padding: 7px;
+    }
+
+    .menuLinkLongAlt {
         height: 45px;
     }
 
-    .menuLink {
-        padding: 7px;
-    }
-
-    .menuLinkDec {
-        padding: 7px;
-    }
-
     .menuLinkLong {
-        padding: 7px;
         height: 35px;
     }
 
@@ -596,19 +763,81 @@ label {
     }
 
     .footerBG {
-        margin: 5px;
+        margin: 0px;
+        padding: 0px;
+        margin-top: -30px;
         padding: 5px;
-        width: calc(100% - 20px);
+        width: calc(100% - 12px);
     }
 
     .footerContent {
+        border: none;
         margin-left: 0%;
+        padding: 0px;
         width: 100%;
         grid-template-areas: "div";
     }
+
+    .checkbtn {
+        width: 100%;
+        justify-content: space-between;
+        padding: 0 12px;
+    }
+
+    #check:checked~ul {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #check:checked~ul a {
+        display: inline;
+        width: 80%;
+        /* margin-top: 10px; */
+        margin-left: 10%;
+        gap: 5px;
+    }
+
+    #check:checked~ul .logo-hamburger {
+        margin-top: 30px;
+    }
 }
 
-@media (max-width:600px) {
+@media (max-width:650px) {
+    nav ul {
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        display: inline;
+        white-space: pre-line;
+    }
+
+    .tableBg,
+    .quickLinks {
+        grid-template-areas:
+            "image";
+    }
+
+    .checkbtn {
+        width: 100%;
+        justify-content: space-between;
+        padding: 0 12px;
+    }
+
+    .logo-hamburger {
+        width: 100%;
+        justify-content: center;
+        padding: 0 12px;
+    }
+
+    .hamburger-toggle,
+    .hamburger-lines {
+        display: flex;
+    }
+
     nav ul label img {
         z-index: 9999;
         animation: scroll .7s ease-out .3s;
@@ -618,17 +847,6 @@ label {
     .quickLinks {
         grid-template-areas:
             "image";
-    }
-
-    nav ul {
-        overflow-y: hidden;
-        overflow-x: hidden;
-        display: inline;
-        white-space: pre-line;
-    }
-
-    #check:checked~ul a {
-        display: inline;
     }
 
     nav ul a {
@@ -684,11 +902,15 @@ label {
 }
 
 @keyframes transitionIn {
-    from {
+    0% {
         opacity: 0;
     }
 
-    to {
+    25% {
+        opacity: 0;
+    }
+
+    100% {
         opacity: 1;
     }
 }
