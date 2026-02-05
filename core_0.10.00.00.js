@@ -1,5 +1,6 @@
 // Variables
 let isContextMenuOpen = 0;
+let isImageOpen = 0;
 let canOpenTheContextMenu = 1;
 let currentTarget = null;
 let currentMouseTarget = null;
@@ -54,29 +55,30 @@ function initializedContextMenu() {
             contextHistorySection.style.display = 'block';
         }
 
-        if (currentTarget == null) {
+        if (currentTarget == null || isImageOpen == 1) {
             contextOpenNewTab.style.display = 'none';
         } else {
             contextOpenNewTab.style.display = 'inline';
         }
 
+
         var text = window.getSelection().toString();
 
-        if (text.length > 0 || currentTargetType == "image" || currentTargetType == "video") {
+        if ((text.length > 0 || currentTargetType == "image" || currentTargetType == "video") && isImageOpen == 0) {
             contextCopyBtn.style.display = 'inline';
         }
         else {
             contextCopyBtn.style.display = 'none';
         }
 
-        if (currentTargetType == "image") {
+        if (currentTargetType == "image" && isImageOpen == 0) {
             contextZoomBtn.style.display = 'inline';
         }
         else {
             contextZoomBtn.style.display = 'none';
         }
 
-        if (currentTarget == null && text.length <= 0) {
+        if (currentTarget == null && text.length <= 0 || isImageOpen == 1) {
             contextQuickActionsSection.style.display = 'none';
         }
         else {
@@ -265,6 +267,7 @@ let winHeight = window.innerHeight;
 
 function zoomImage() {
     if (currentTargetType == "image") {
+        isImageOpen = 1;
         const bg = document.querySelector(".fullscreenImageBG");
         bg.innerHTML = `<img src="${currentTarget}" 
                              class="fullscreenImage fullscreenImgContext" id="fullscreenImgContext">`;
@@ -273,6 +276,7 @@ function zoomImage() {
 }
 
 function closeImage() {
+    isImageOpen = 0;
     document.body.style.overflow = '';
 
     var div = document.querySelector(".fullscreenImageBG");
